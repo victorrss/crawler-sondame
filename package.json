@@ -19,8 +19,7 @@
     "cheerio",
     "request"
   ],
-  "author": "Victor R.",
-  "license": "ISC",
+  "author": "Victor R. <victorrss@live.com>",
   "bugs": {
     "url": "https://github.com/victorrss/crawler-sondame/issues"
   },
