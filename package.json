@@ -1,0 +1,28 @@
+{
+  "name": "crawler-sondame",
+  "version": "1.0.0",
+  "description": "Web crawler to download files from sonda.me. Developed with nodejs",
+  "main": "crawler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorrss/crawler-sondame.git"
+  },
+  "keywords": [
+    "web",
+    "crawler",
+    "crawler",
+    "sonda.me",
+    "nodejs",
+    "cheerio",
+    "request"
+  ],
+  "author": "Victor R.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorrss/crawler-sondame/issues"
+  },
+  "homepage": "https://github.com/victorrss/crawler-sondame#readme"
+}
