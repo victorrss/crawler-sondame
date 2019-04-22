@@ -1,10 +1,11 @@
-var fs = require('fs');
-var request = require('request');
-var cheerio = require('cheerio');
-var urlFile = 'http://www.sonda.me/file/';
+const fs = require('fs');
+const request = require('request');
+const cheerio = require('cheerio');
+const urlFile = 'http://www.sonda.me/file/';
 var files = [];
-var begin = 77610;
-var end = begin + 50;
+var begin = 90550;
+var end = begin+500;
+
 
 for (let i = begin; i <= end; i++) {
     request(urlFile + i, function (error, response, html) {
@@ -49,10 +50,13 @@ for (let i = begin; i <= end; i++) {
 
         // write file
         if (i == end)
-            write(files);
+          write(files);
     });
 }
 
 function write(txt) {
-    fs.writeFile('capture.json', JSON.stringify(files, null, 2));
+    fs.writeFile('capture.json', JSON.stringify(txt, null, 2), (err) => {
+		if (err) console.log(err);
+		console.log("Successfully Written to File.");
+	});
 }
